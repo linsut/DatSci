@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="age <= 0.5\ngini = 0.48\nsamples = 20\nvalue = [8, 12]\nclass = yes", fillcolor="#bddef6"] ;
+1 [label="gini = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = yes", fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="student <= 0.5\ngini = 0.49\nsamples = 14\nvalue = [8, 6]\nclass = no", fillcolor="#f8e0ce"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="age <= 1.5\ngini = 0.219\nsamples = 8\nvalue = [7, 1]\nclass = no", fillcolor="#e99355"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 6\nvalue = [6, 0]\nclass = no", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="credit_rating <= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = no", fillcolor="#ffffff"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="credit_rating <= 0.5\ngini = 0.278\nsamples = 6\nvalue = [1, 5]\nclass = yes", fillcolor="#61b1ea"] ;
+2 -> 8 ;
+9 [label="income <= 1.5\ngini = 0.444\nsamples = 3\nvalue = [1, 2]\nclass = yes", fillcolor="#9ccef2"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes", fillcolor="#399de5"] ;
+8 -> 12 ;
+}
